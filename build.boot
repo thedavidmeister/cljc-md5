@@ -12,6 +12,7 @@
    [adzerk/boot-cljs "2.1.4"]
    [crisptrutski/boot-cljs-test "0.3.5-SNAPSHOT"]
    [adzerk/bootlaces "0.1.13"]
+   [adzerk/boot-test "1.2.0"]
 
    ; transitive deps...
    [doo "0.1.8"]])
@@ -26,7 +27,8 @@
 (require
  '[adzerk.boot-cljs :refer [cljs]]
  '[crisptrutski.boot-cljs-test :refer [test-cljs]]
- '[adzerk.bootlaces :refer :all])
+ '[adzerk.bootlaces :refer :all]
+ '[adzerk.boot-test :refer :all])
 
 (bootlaces! version)
 

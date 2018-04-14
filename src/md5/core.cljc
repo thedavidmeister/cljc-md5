@@ -1,7 +1,6 @@
 (ns md5.core
- (:require
-  goog.crypt
-  goog.crypt.Md5))
+ #?(:clj (:import java.security.MessageDigest java.math.BigInteger)
+    :cljs (:require goog.crypt goog.crypt.Md5)))
 
 (defn string->md5-hex
  [s]
@@ -11,4 +10,8 @@
     (goog.crypt/byteArrayToHex
      (let [md5 (goog.crypt.Md5.)]
       (.update md5 (goog.crypt/stringToUtf8ByteArray s))
-      (.digest md5)))))
+      (.digest md5)))
+    :clj
+    (let [algorithm (MessageDigest/getInstance "MD5")
+          raw (.digest algorithm (.getBytes s))]
+     (format "%032x" (BigInteger. 1 raw)))))
