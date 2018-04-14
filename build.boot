@@ -1,5 +1,5 @@
 (def project 'thedavidmeister/cljc-md5)
-(def version "0.0.1")
+(def version "0.0.2")
 (def description "Clojure(script) string to md5 hex string")
 (def github-url "https://github.com/thedavidmeister/cljc-md5")
 
