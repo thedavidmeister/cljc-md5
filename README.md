@@ -19,6 +19,8 @@ ClojureScript wraps `goog.crypt.Md5`.
 
 Only one fn is provided `md5.core/string->md5-hex`.
 
+String goes in, md5 hex string comes out, simple 😃.
+
 Simple example, hashing an email for use in [Gravatar](gravatar.com) URLs.
 
 ```clojure
