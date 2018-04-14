@@ -3,6 +3,7 @@
     :cljs (:require goog.crypt goog.crypt.Md5)))
 
 (defn string->md5-hex
+ "String goes in, md5 hex string comes out."
  [s]
  {:pre [(string? s)]
   :post [(string? %)]}
