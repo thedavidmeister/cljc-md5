@@ -10,6 +10,8 @@ ClojureScript uses `goog.crypt.Md5`.
 
 ## Installation
 
+[![Clojars Project](https://img.shields.io/clojars/v/thedavidmeister/cljc-md5.svg)](https://clojars.org/thedavidmeister/cljc-md5)
+
 ## Usage
 
 Only one fn is provided `md5.core/string->md5-hex`.
