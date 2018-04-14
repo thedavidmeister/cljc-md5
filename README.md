@@ -2,11 +2,12 @@
 
 No frills string to hex string md5 hashing.
 
-Works across both Clojure and Clojurescript.
+Works across both Clojure and Clojurescript as a thin wrapper for existing rock
+solid crypto.
 
-Clojure uses `java.security.MessageDigest`.
+Clojure wraps `java.security.MessageDigest`.
 
-ClojureScript uses `goog.crypt.Md5`.
+ClojureScript wraps `goog.crypt.Md5`.
 
 ## Installation
 
