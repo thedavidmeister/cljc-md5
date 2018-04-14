@@ -24,7 +24,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: boot test-cljs
+      - run: boot test-cljs -x
       - run: boot test
 
       - save_cache:
