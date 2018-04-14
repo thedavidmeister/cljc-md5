@@ -34,3 +34,9 @@ jobs:
             - "~/.boot/cache/bin"
             - "~/.boot/cache/lib"
           key: v1-dependencies-{{ checksum "build.boot" }}
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
