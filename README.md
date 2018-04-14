@@ -12,6 +12,8 @@ ClojureScript uses `goog.crypt.Md5`.
 
 [![Clojars Project](https://img.shields.io/clojars/v/thedavidmeister/cljc-md5.svg)](https://clojars.org/thedavidmeister/cljc-md5)
 
+[![CircleCI](https://circleci.com/gh/thedavidmeister/cljc-md5/tree/master.svg?style=svg)](https://circleci.com/gh/thedavidmeister/cljc-md5/tree/master)
+
 ## Usage
 
 Only one fn is provided `md5.core/string->md5-hex`.
