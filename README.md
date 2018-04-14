@@ -27,4 +27,6 @@ Simple example, hashing an email for use in [Gravatar](gravatar.com) URLs.
 (md5.core/string->md5-hex "foo@example.com") ; "b48def645758b95537d4424c84d1a9ff"
 ```
 
-Fair warning, md5 hashes are NOT suitable for use with passwords.
+## Do NOT use with passwords
+
+md5 hashes are NOT suitable for use with passwords in any way, shape or form.
